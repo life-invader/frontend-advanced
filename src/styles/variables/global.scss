@@ -1,0 +1,14 @@
+:root {
+  /* Общее */
+  --fontFamily: Consolas, sans-serif;
+
+  /* Шрифт, размер М */
+  --fontSize-m: 16px;
+  --lineHeight-m: 24px;
+  --font-m: var(--fontSize-m) / var(--lineHeight-m) var(--fontFamily);
+
+  /* Шрифт, размер L */
+  --fontSize-l: 24px;
+  --lineHeight-l: 32px;
+  --font-l: var(--fontSize-l) / var(--lineHeight-l) var(--fontFamily);
+}

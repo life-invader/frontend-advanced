@@ -4,11 +4,16 @@ import { App } from './App';
 import { AboutPageAsync } from './pages/about/about.lazy';
 import { MainPageAsync } from './pages/main/main.lazy';
 import { Suspense } from 'react';
+import { ThemeProvider } from './theme/provider';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: (
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    ),
     children: [
       {
         index: true,
