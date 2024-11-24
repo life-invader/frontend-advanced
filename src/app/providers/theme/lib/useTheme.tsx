@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeCtx } from './ctx';
+import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeCtx } from 'app/providers/theme/lib/ctx';
 
 type UseTheme = () => { theme: Theme; toggleTheme: () => void };
 
