@@ -9,6 +9,8 @@ export const buildDevServer = (options: IBuildOptions): DevServerConfiguration =
     static: path.resolve(__dirname, 'build'),
     open: true,
     port,
+    historyApiFallback: true,
+    hot: true,
   };
 
   return devServer;
